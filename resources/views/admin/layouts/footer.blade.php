@@ -207,6 +207,12 @@
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ url('') }}/design/adminlte/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+
+<link rel="stylesheet" href="{{ url('') }}/design/adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<script src="{{ url('') }}/design/adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{ url('') }}/design/adminlte/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="{{ url('') }}/design/adminlte/bower_components/datatables.net-bs/js/dataTables.buttons.min.js"></script>
+<script src="{{ url('') }}/vendor/datatables/buttons.server-side.js"></script>
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
@@ -239,5 +245,9 @@
 <script src="{{ url('') }}/design/adminlte/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ url('') }}/design/adminlte/dist/js/demo.js"></script>
+
+@stack('js')
+@stack('css')
+
 </body>
 </html>

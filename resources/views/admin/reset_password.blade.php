@@ -43,6 +43,13 @@
                 <h1>{{session('success')}}</h1>
             </div>
             @endif
+            @if ($errors->all())
+            <div class="alert alert-danger">
+                @foreach ($errors->all() as $error)
+                <li>{{ $error}}</li>
+                @endforeach
+            </div>
+            @endif
             <form method="post">
                 {!! csrf_field() !!}
                 <div class="form-group has-feedback">
@@ -56,7 +63,8 @@
                 </div>
 
                 <div class="form-group has-feedback">
-                    <input type="password" name="password_confirmation" class="form-control" placeholder="Password">
+                    <input type="password" name="password_confirmation" class="form-control"
+                        placeholder="Enter Confirmation Password">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
 

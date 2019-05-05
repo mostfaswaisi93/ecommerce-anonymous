@@ -1,9 +1,9 @@
 @component('mail::message')
 # Reset Account
 
-Welcome {{ admin()->user()->name}} <br>
+{{-- Welcome {{ admin()->user()->name}} <br> --}}
 
-{{-- Welcome {{ $data['data']->name }} <br> --}}
+Welcome {{ $data['data']->name }} <br>
 The body of your message.
 
 @component('mail::button', ['url' => aurl('reset/password/'.$data['token'])])
