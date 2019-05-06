@@ -59,15 +59,18 @@ class AdminDatatable extends DataTable
                     ['extend' => 'reload', 'className' => 'btn btn-defult', 'text' => '<i class="fa fa-refresh"></i>'],
                 ],
                 'initComplete' => "function () {
-                    this.api().columns().every(function () {
+                    this.api().columns([0,1,2,3,4]).every(function () {
                         var column = this;
                         var input = document.createElement(\"input\");
                         $(input).appendTo($(column.footer()).empty())
-                        .on('change', function () {
+                        .on('keyup', function () {
                             column.search($(this).val(), false, false, true).draw();
                         });
                     });
                 }",
+
+                'language' => datatable_lang(),
+
             ]);
     }
 
@@ -80,48 +83,43 @@ class AdminDatatable extends DataTable
     {
         return [
             [
-                'name' => 'id',
-                'data' => 'id',
-                'title' => 'ID'
-            ],
-            [
-                'name' => 'name',
-                'data' => 'name',
-                'title' => 'Admin Name'
-            ],
-            [
-                'name' => 'email',
-                'data' => 'email',
-                'title' => 'Admin Email'
-            ],
-            [
-                'name' => 'created_at',
-                'data' => 'created_at',
-                'title' => 'Created at'
-            ],
-            [
-                'name' => 'updated_at',
-                'data' => 'updated_at',
-                'title' => 'Updated at'
-            ],
-            [
-                'name' => 'edit',
-                'data' => 'edit',
-                'title' => 'Edit',
-                'exportable' => false,
-                'printable' => false,
-                'orderable' => false,
-                'searchable' => false
-            ],
-            [
-                'name' => 'delete',
-                'data' => 'delete',
-                'title' => 'Delete',
-                'exportable' => false,
-                'printable' => false,
-                'orderable' => false,
-                'searchable' => false
-            ],
+				'name'  => 'id',
+				'data'  => 'id',
+				'title' => '#',
+			], [
+				'name'  => 'name',
+				'data'  => 'name',
+				'title' => trans('admin.admin_name'),
+			], [
+				'name'  => 'email',
+				'data'  => 'email',
+				'title' => 'Admin Email',
+				'title' => trans('admin.admin_email'),
+			], [
+				'name'  => 'created_at',
+				'data'  => 'created_at',
+				'title' => trans('admin.created_at'),
+			], [
+				'name'  => 'updated_at',
+				'data'  => 'updated_at',
+				'title' => trans('admin.updated_at'),
+			], [
+				'name'       => 'edit',
+				'data'       => 'edit',
+				'title'      => trans('admin.edit'),
+				'exportable' => false,
+				'printable'  => false,
+				'orderable'  => false,
+				'searchable' => false,
+			], [
+				'name'       => 'delete',
+				'data'       => 'delete',
+				'title'      => trans('admin.delete'),
+				'exportable' => false,
+				'printable'  => false,
+				'orderable'  => false,
+				'searchable' => false,
+			],
         ];
     }
 

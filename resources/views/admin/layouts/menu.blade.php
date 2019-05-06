@@ -208,6 +208,18 @@
                 </li>
             </ul>
         </li>
+
+        <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-globe"></i>
+                <span class="hidden-xs"> </span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="{{ aurl('lang/ar') }}"><i class="fa fa-flag"></i> عربى</a></li>
+                <li><a href="{{ aurl('lang/en') }}"><i class="fa fa-flag"></i> English</a></li>
+            </ul>
+        </li>
+
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
