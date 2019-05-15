@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\DataTables\AdminDatatable;
 use Illuminate\Http\Request;
+use App\Admin;
 
 class AdminController extends Controller
 {
@@ -24,7 +25,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //
+		return view('admin.admins.create', ['title' => trans('admin.create_admin')]);
     }
 
     /**
@@ -33,10 +34,23 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+
+	public function store() {
+		$data = $this->validate(request(),
+			[
+				'name'     => 'required',
+				'email'    => 'required|email|unique:admins',
+				'password' => 'required|min:6'
+			], [], [
+				'name'     => trans('admin.name'),
+				'email'    => trans('admin.email'),
+				'password' => trans('admin.password'),
+			]);
+		$data['password'] = bcrypt(request('password'));
+		Admin::create($data);
+		session()->flash('success', trans('admin.record_added'));
+		return redirect(aurl('admin'));
+	}
 
     /**
      * Display the specified resource.
