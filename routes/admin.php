@@ -15,6 +15,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
         Route::get('/', function () {
             return view('admin.home');
         });
+
+        Route::get('settings', 'Settings@setting');
+        Route::post('settings', 'Settings@setting_save');
+
         Route::any('logout', 'AdminAuth@logout');
     });
     Route::get('lang/{lang}', function ($lang) {

@@ -23,9 +23,17 @@
     <link rel="stylesheet" href="{{ url('/') }}/design/adminlte/dist/css/rtl/rtl.css">
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&amp;subset=arabic,latin-ext" rel="stylesheet">
     <style type="text/css">
-      html,body,.alert ,h1,h2,h3,h4,h5,h6{
-        font-family: 'Cairo', sans-serif;
-      }
+        html,
+        body,
+        .alert,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Cairo', sans-serif;
+        }
     </style>
     @endif
 
@@ -47,7 +55,7 @@
         href="{{ url('/') }}/design/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
 
-        <script src="{{ url('/design/adminlte/dist/js/myfunctions.js') }}"></script>
+    <script src="{{ url('/design/adminlte/dist/js/myfunctions.js') }}"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
