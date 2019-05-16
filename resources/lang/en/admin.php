@@ -48,5 +48,10 @@ return [
 	'save'                          => 'Save',
 	'updated_record'                => 'Updated Record',
 	'deleted_record'                => 'Deleted Record',
-	'delete_this'                   => 'Are you sure to delete :name?',
+    'delete_this'                   => 'Are you sure to delete :name?',
+    'users'                         => 'Users',
+	'user'                          => 'User',
+	'company'                       => 'Company',
+	'vendor'                        => 'Vendor',
+	'level'                         => 'User level',
 ];

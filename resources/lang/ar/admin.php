@@ -49,5 +49,9 @@ return [
 	'updated_record'                => 'تم تحديث البيانات بنجاح',
 	'deleted_record'                => 'تم حذف البيانات بنجاح',
 	'delete_this'                   => 'هل أنت موافق على حذف :name؟',
-
+	'users'                         => 'الأعضاء',
+	'user'                          => 'عضو',
+	'company'                       => 'شركة',
+	'vendor'                        => 'متجر',
+	'level'                         => 'مستوى العضوية',
 ];

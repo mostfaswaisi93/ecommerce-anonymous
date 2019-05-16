@@ -10,6 +10,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::group(['middleware' => 'admin:admin'], function () {
         Route::resource('admin', 'AdminController');
         Route::delete('admin/destroy/all', 'AdminController@multi_delete');
+        Route::resource('users', 'UsersController');
+        Route::delete('users/destroy/all', 'UsersController@multi_delete');
         Route::get('/', function () {
             return view('admin.home');
         });
