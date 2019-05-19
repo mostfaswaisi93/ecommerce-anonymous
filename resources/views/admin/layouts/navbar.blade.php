@@ -111,6 +111,22 @@
                             {{ trans('admin.add') }}</a></li>
                 </ul>
             </li>
+
+            <li class="treeview {{ active_menu('cities')[0] }}">
+                <a href="#">
+                    <i class="fa fa-flag"></i> <span>{{ trans('admin.cities') }}</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu" style="{{ active_menu('cities')[1] }}">
+                    <li class=""><a href="{{ aurl('cities') }}"><i class="fa fa-flag"></i>
+                            {{ trans('admin.cities') }}</a></li>
+                    <li class=""><a href="{{ aurl('cities/create') }}"><i class="fa fa-plus"></i>
+                            {{ trans('admin.add') }}</a></li>
+                </ul>
+            </li>
+
         </ul>
     </section>
     <!-- /.sidebar -->
