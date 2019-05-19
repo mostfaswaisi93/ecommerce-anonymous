@@ -44,6 +44,7 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header"></li>
+
             <li class="treeview {{ active_menu('')[0] }}">
                 <a href="#">
                     <i class="fa fa-list"></i> <span>{{ trans('admin.dashboard') }}</span>
@@ -94,6 +95,20 @@
                             {{ trans('admin.vendor') }}</a></li>
                     <li class=""><a href="{{ aurl('users') }}?level=company"><i class="fa fa-users"></i>
                             {{ trans('admin.company') }}</a></li>
+                </ul>
+            </li>
+            <li class="treeview {{ active_menu('countries')[0] }}">
+                <a href="#">
+                    <i class="fa fa-flag"></i> <span>{{ trans('admin.countries') }}</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+                    <li class=""><a href="{{ aurl('countries') }}"><i class="fa fa-flag"></i>
+                            {{ trans('admin.countries') }}</a></li>
+                    <li class=""><a href="{{ aurl('countries/create') }}"><i class="fa fa-plus"></i>
+                            {{ trans('admin.add') }}</a></li>
                 </ul>
             </li>
         </ul>

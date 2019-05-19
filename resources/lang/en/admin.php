@@ -67,4 +67,11 @@ return [
     'status'                        => 'Status',
     'open'                          => 'Open',
     'message_maintenance'           => 'Message Maintenance',
+    'countries'                    => 'Countries',
+	'create_countries'             => 'Add new Country',
+	'country_name_ar'              => 'Country name Arabic',
+	'country_name_en'              => 'Country name English',
+	'country_flag'                 => 'Country flag',
+	'mob'                          => 'Country mob',
+	'code'                         => 'Chose / Country code',
 ];

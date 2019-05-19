@@ -12,13 +12,13 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
         Route::delete('admin/destroy/all', 'AdminController@multi_delete');
         Route::resource('users', 'UsersController');
         Route::delete('users/destroy/all', 'UsersController@multi_delete');
+        Route::resource('countries', 'CountriesController');
+        Route::delete('countries/destroy/all', 'CountriesController@multi_delete');
         Route::get('/', function () {
             return view('admin.home');
         });
-
         Route::get('settings', 'Settings@setting');
         Route::post('settings', 'Settings@setting_save');
-
         Route::any('logout', 'AdminAuth@logout');
     });
     Route::get('lang/{lang}', function ($lang) {

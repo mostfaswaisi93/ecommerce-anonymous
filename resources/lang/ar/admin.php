@@ -67,4 +67,11 @@ return [
     'status'                        => 'الحالة',
     'open'                          => 'مفتوح',
     'message_maintenance'           => 'رسالة الصيانة',
+    'countries'                    => 'الدول',
+	'create_countries'             => 'إضافة دولة جديدة',
+	'country_name_ar'              => 'اسم الدولة عربى',
+	'country_name_en'              => 'اسم الدولة إنجليزى',
+	'country_flag'                 => 'العلم',
+	'mob'                          => 'كود الدولة',
+	'code'                         => 'اختار / رمز الدولة',
 ];
