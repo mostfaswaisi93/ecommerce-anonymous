@@ -4,9 +4,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Model\Setting;
 
-use Storage;
-use Up;
-
 class Settings extends Controller
 {
     public function setting()
@@ -18,8 +15,16 @@ class Settings extends Controller
         $data = $this->validate(
             request(),
             [
-                'logo' => v_image(),
-                'icon' => v_image()
+                'logo'                => v_image(),
+                'icon'                => v_image(),
+                'status'              => '',
+                'description'         => '',
+                'keywords'            => '',
+                'main_lang'           => '',
+                'message_maintenance' => '',
+                'email'               => '',
+                'sitename_en'         => '',
+                'sitename_ar'         => '',
             ],
             [],
             [
