@@ -78,4 +78,10 @@ return [
     'city_name_ar'                 => 'City name Arabic',
     'city_name_en'                 => 'City name English',
     'country_id'                   => 'Country',
+    'states'                       => 'Areas / States',
+    'create_states'                => 'Add new State',
+    'state_name_ar'                => 'State name Arabic',
+    'state_name_en'                => 'State name English',
+    'city_id'                      => 'City',
+
 ];

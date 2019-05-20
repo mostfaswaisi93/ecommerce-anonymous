@@ -42,7 +42,7 @@ class CountriesController extends Controller
                 'country_name_en' => 'required',
                 'mob'             => 'required',
                 'code'            => 'required',
-                'logo'            => 'required|' . v_image(),
+				'logo'            => 'sometimes|nullable|'.v_image(),
             ],
             [],
             [
