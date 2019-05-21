@@ -142,6 +142,36 @@
                 </ul>
             </li>
 
+            <li class="treeview {{ active_menu('departments')[0] }}">
+                <a href="#">
+                    <i class="fa fa-list"></i> <span>{{ trans('admin.departments') }}</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu" style="{{ active_menu('departments')[1] }}">
+                    <li class=""><a href="{{ aurl('departments') }}"><i class="fa fa-list"></i>
+                            {{ trans('admin.departments') }}</a></li>
+                    <li class=""><a href="{{ aurl('departments/create') }}"><i class="fa fa-plus"></i>
+                            {{ trans('admin.add') }}</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview {{ active_menu('trademarks')[0] }}">
+                <a href="#">
+                    <i class="fa fa-cube"></i> <span>{{ trans('admin.trademarks') }}</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu" style="{{ active_menu('trademarks')[1] }}">
+                    <li class=""><a href="{{ aurl('trademarks') }}"><i class="fa fa-cube"></i>
+                            {{ trans('admin.trademarks') }}</a></li>
+                    <li class=""><a href="{{ aurl('trademarks/create') }}"><i class="fa fa-plus"></i>
+                            {{ trans('admin.add') }}</a></li>
+                </ul>
+            </li>
+
         </ul>
     </section>
     <!-- /.sidebar -->

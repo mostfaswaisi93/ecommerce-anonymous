@@ -83,5 +83,17 @@ return [
     'state_name_ar'                => 'State name Arabic',
     'state_name_en'                => 'State name English',
     'city_id'                      => 'City',
+    'departments'                  => 'Departments',
+    'dep_name_ar'                  => 'Department name Arabic',
+    'dep_name_en'                  => 'Department name English',
+    'parent'                       => 'Parent',
+    'icon'                         => 'Icon',
+    'description'                  => 'Description',
+    'keyword'                      => 'Keyword',
+    'trademarks'                   => 'Trademarks',
+    'name_en'                      => 'Name English',
+    'name_ar'                      => 'Name Arabic',
+    'create_trademarks'            => 'Create Trademarks',
+    'trade_icon'                   => 'Trademarks Icon',
 
 ];
