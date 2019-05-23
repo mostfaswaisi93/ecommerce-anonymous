@@ -105,5 +105,12 @@ return [
     'lng'                          => '',
     'manufacturers_icon'           => 'Manufacturers Icon',
     'address'                      => 'Address',
+    'shipping'                     => 'Shipping Companies',
+    'ship_icon'                    => 'Ship icon',
+    'owner_id'                     => 'Owner',
+    'malls'                        => 'Malls',
+    'mall_icon'                    => 'Mall icon',
+    'colors'                       => 'Colors',
+    'color'                        => 'Color',
 
 ];
