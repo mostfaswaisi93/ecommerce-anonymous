@@ -95,5 +95,15 @@ return [
     'name_ar'                      => 'Name Arabic',
     'create_trademarks'            => 'Create Trademarks',
     'trade_icon'                   => 'Trademarks Icon',
+    'manufacturers'                => 'Manufacturers',
+    'mobile'                       => 'Mobile',
+    'facebook'                     => 'Facebook',
+    'twitter'                      => 'Twitter',
+    'website'                      => 'Website',
+    'contact_name'                 => 'Contact name',
+    'lat'                          => '',
+    'lng'                          => '',
+    'manufacturers_icon'           => 'Manufacturers Icon',
+    'address'                      => 'Address',
 
 ];
