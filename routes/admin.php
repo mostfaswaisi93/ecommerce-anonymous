@@ -36,6 +36,12 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 
         Route::resource('departments', 'DepartmentsController');
 
+        Route::resource('malls', 'MallsController');
+        Route::delete('malls/destroy/all', 'MallsController@multi_delete');
+
+        Route::resource('colors', 'ColorsController');
+        Route::delete('colors/destroy/all', 'ColorsController@multi_delete');
+
         Route::get('/', function () {
             return view('admin.home');
         });
@@ -48,7 +54,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 
     Route::get('lang/{lang}', function ($lang) {
         session()->has('lang') ? session()->forget('lang') : '';
-        $lang == 'ar' ? session()->put('lang', 'ar') : session()->put('lang', 'en');
+        'ar' == $lang ? session()->put('lang', 'ar') : session()->put('lang', 'en');
         return back();
     });
 });
