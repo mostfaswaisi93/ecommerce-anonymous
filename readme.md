@@ -1,3 +1,1 @@
-# ecommerce
-
-Create Ecommerce Laravel Project
+## Laravel - E-Commerce Course
